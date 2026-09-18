@@ -52,7 +52,7 @@ The desktop app supports macOS only. The browser preview needs a browser with We
 
 It uses more power than a still wallpaper because it renders a 3D scene. The amount depends on your Mac, screen resolution and number of displays. There isn't a measured battery-life estimate yet.
 
-The optimized build thins the rear rivergrass by about 30%, reduces oversampling and shadow work, and fully stops the render loop when paused or hidden. It keeps 4× multisampling, the HDR lighting, all 24 fish and the foreground planting. On an M5 Pro this halves the GPU time per frame; battery drain has not been measured.
+The optimized build thins the rear rivergrass by about 30%, reduces oversampling and shadow work, and fully stops the render loop when paused or hidden. It keeps 4× multisampling, the HDR lighting, all 8 koi and the foreground planting. On an M5 Pro this halves the GPU time per frame; battery drain has not been measured.
 
 The wallpaper keeps the same frame-rate limits, so rendering improvements are not spent on extra frames:
 
