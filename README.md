@@ -4,6 +4,16 @@
 >
 > 作者网站：[zlbigger.com](https://zlbigger.com) · 在线演示：运行后打开 [localhost:8080](http://127.0.0.1:8080)
 
+## 客户演示素材
+
+参考图：
+
+![锦鲤桌面效果参考图](docs/demo/koi-reference.jpg)
+
+视频演示：[下载或播放 koi-demo.mp4](docs/demo/koi-demo.mp4)
+
+视频和图片来自本项目客户演示素材，用于展示锦鲤版在多显示器桌面环境中的效果。
+
 ![Riverscape running as a live macOS wallpaper, behind desktop icons and widgets](docs/images/riverscape-desktop.png)
 
 Have you always wanted an aquarium? Now you can have it, right on your desktop :)
