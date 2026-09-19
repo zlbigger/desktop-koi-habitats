@@ -2,7 +2,7 @@
 
 > 基于 [chaseleantj/desktop-habitats](https://github.com/chaseleantj/desktop-habitats) 改造的锦鲤桌面生态缸。
 >
-> 作者网站：[zlbigger.com](https://zlbigger.com) · 在线演示：运行后打开 [localhost:8080](http://127.0.0.1:8080)
+> 作者网站：[zlbigger.com](https://zlbigger.com)
 
 ## 客户演示素材
 
