@@ -4,14 +4,6 @@
 >
 > 作者网站：[zlbigger.com](https://zlbigger.com)
 
-## 新增场景：Mermaid
-
-在锦鲤水族箱之外，新增了一个独立的成年美人鱼水下场景，使用程序化几何、皮肤/鱼尾材质、水下雾效、气泡和动态灯光。
-
-- 浏览器场景入口：`scenes/mermaid/`
-- 本地预览：`http://127.0.0.1:8080/scenes/mermaid/`
-- Mermaid scene: a cinematic adult mermaid with procedural geometry, underwater fog, bubbles and animated lighting.
-
 ## 客户演示素材
 
 参考图：
