@@ -22,25 +22,59 @@ This fork replaces the original small fish with eight larger ornamental koi, inc
 
 The scene is rendered live with Three.js and WebGL2. Everything runs locally, with no account or internet connection needed after setup. Desktop wallpaper support is **macOS only** for now; you can also try Riverscape in a browser. The app opens Riverscape directly.
 
-## Install on Mac
+## 本地安装与运行（macOS）
 
-You need macOS 13 or newer and the Xcode command line tools. To install the tools, open Terminal and run:
+这是桌面壁纸应用，推荐使用安装脚本运行，不需要打开 localhost。需要 macOS 13 或更高版本。
 
 ```sh
+# 1. 安装 Xcode Command Line Tools（如果尚未安装）
 xcode-select --install
-```
 
-Wait for that installation to finish. Download and unzip this repository, or clone it, then open Terminal in the project folder and run:
+# 2. 克隆项目并进入目录
+git clone https://github.com/zlbigger/desktop-koi-habitats.git
+cd desktop-koi-habitats
 
-```sh
+# 3. 编译、安装并立即启动锦鲤桌面壁纸
 sh wallpaper/install.sh
 ```
 
-The script builds the app for your Mac, installs it at `~/Applications/Desktop Habitats.app`, and starts it. It also adds a login item so the aquarium starts when you sign in. Allow about 20 seconds for the first frame to appear.
+安装完成后，应用位于 `~/Applications/Desktop Habitats.app`，并会加入登录启动项。关闭终端不会影响运行。安装脚本会在每块显示器上创建一个桌面锦鲤水族箱。
 
-During installation, macOS may ask whether Terminal can control System Events. This lets the installer set a still image of the aquarium as your desktop picture, underneath the animation. You can decline; the live wallpaper will still work.
+如果 macOS 弹出“Terminal 想要控制 System Events”，允许它即可用于设置底层静态桌面图片；拒绝也不影响动态壁纸运行。
 
-You don't need Node.js for the wallpaper. If you already have it, `npm run wallpaper` runs the same installer.
+卸载：
+
+```sh
+cd desktop-koi-habitats
+sh wallpaper/uninstall.sh
+```
+
+## Local installation and running (macOS)
+
+This is a desktop wallpaper app. The recommended way to run it is to install the macOS app; opening `localhost` is optional and only starts the browser preview. macOS 13 or newer is required.
+
+```sh
+# 1. Install Xcode Command Line Tools if needed
+xcode-select --install
+
+# 2. Clone the project
+git clone https://github.com/zlbigger/desktop-koi-habitats.git
+cd desktop-koi-habitats
+
+# 3. Build, install, and start the koi desktop wallpaper
+sh wallpaper/install.sh
+```
+
+The app is installed at `~/Applications/Desktop Habitats.app` and added as a login item. You can close Terminal after installation. The installer creates one koi aquarium on each display.
+
+If macOS asks whether Terminal may control System Events, allow it to set the still desktop image underneath the animation. The live wallpaper also works if you decline.
+
+To uninstall:
+
+```sh
+cd desktop-koi-habitats
+sh wallpaper/uninstall.sh
+```
 
 ## Use the wallpaper
 
@@ -118,9 +152,13 @@ Or use `npm run unwallpaper`. This stops the app, removes its login item and del
 
 The still image at `~/Pictures/Desktop Habitats.png` stays behind, along with the desktop picture setting. Choose your previous wallpaper in System Settings, then delete the image if you no longer want it. The saved pause preference is also retained.
 
-## Try it in a browser
+## 浏览器预览（可选） / Optional browser preview
 
-With Node.js 20 or newer, run this from the project folder:
+如果只想预览网页版本，可使用 Node.js 20 或更高版本。它不会安装桌面壁纸：
+
+If you only want the browser preview, use Node.js 20 or newer. This does not install the desktop wallpaper:
+
+
 
 ```sh
 npm start
